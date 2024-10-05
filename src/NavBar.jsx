@@ -1,9 +1,18 @@
-import "./styles/NavBar.scss";
+import "../styles/NavBar.scss";
+
 export default function NavBar() {
   return (
-    <>
-    <h1>Hello</h1>
-    <h2>This is Hemanth Mokkapati</h2>
-    </>
-  )
+    <div className="container">
+      <p>
+        Lorem <a>ipsum, dolor sit amet consectetur</a> adipisicing elit.
+        Reprehenderit, maiores sequi molestiae necessitatibus inventore
+        assumenda debitis iusto, magnam omnis modi{" "}
+        <strong>excepturi error explicabo doloribus quidem</strong> placeat nemo
+        ea recusandae fugit!
+      </p>
+      <button type="button" className="btn">
+        Button
+      </button>
+    </div>
+  );
 }

@@ -1,0 +1,50 @@
+ @import "variables";
+ 
+ 
+ 
+ * {
+
+   margin: 0;
+   line-height: calc(1em + 0.5rem);
+ }
+
+ html {
+   scroll-behavior: smooth;
+
+ }
+
+ body {
+   font-family: 'General Sans', sans-serif;
+   background-color: $dark;
+   color:$light;
+ }
+
+
+ // These are inline elements but we almost never use them in inline mode
+ img,
+ picture,
+ video,
+ canvas,
+ svg {
+   display: block;
+   max-width: 100%;
+   user-select: none;
+ }
+
+ button {
+   display: inline-block;
+   padding: 0;
+   border: none;
+   // background-color: transparent;
+   background: none;
+   cursor: pointer;
+   color: inherit;
+ }
+
+ a{
+  color:$rose;
+ }
+
+ strong{
+  color:$indigo;
+ }
