@@ -1,0 +1,175 @@
+@import "variables";
+
+.header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+
+  &__menu {
+    display: none;
+  }
+
+  &__bars {
+    color: $light;
+    font-size: $size-2xl;
+  }
+}
+
+
+//medium
+@media (min-width: 768px) {
+  .header {
+    &__menu {
+      display: flex;
+      align-items: center;
+      list-style: none;
+      // border:1px solid red;
+      padding: 0;
+      gap: 2em;
+    }
+
+    &__link {
+      text-decoration: none;
+      font-size: $size-xs;
+      color: $slate600;
+      letter-spacing: -0.05em;
+      font-weight: 600;
+      transition: color 0.3s;
+
+      &:hover {
+        color: $rose;
+      }
+    }
+
+    &__line {
+      border: 1px solid $slate600; //clever way to add a divider line
+      padding-top: 1.5em;
+    }
+
+    &__sun {
+      color: $slate600;
+      font-size: $size-sm;
+    }
+
+    &__resume {
+      font-size: $size-xs;
+    }
+
+    &__bars {
+      display: none;
+    }
+  }
+}
+
+//large
+@media (min-width: 1024px) {
+  .header {
+    &__link {
+      font-size: $size-sm;
+    }
+
+    &__sun {
+      // font-size: $size-xl;
+      color: $slate600;
+      width: $size-xl;
+      height: $size-xl; // use width and height instead of font-size
+    }
+
+    &__resume {
+      font-size: $size-sm;
+    }
+  }
+}
+
+
+
+// Mobile first applications can also be done this way ( Definetly check it out ):
+
+// // chatGPT generated CSS
+// @import "variables";
+
+// .header {
+//   display: flex;
+//   justify-content: flex-end;
+//   align-items: center;
+//   padding: 2rem 0; // Simplified padding shorthand
+
+//   &__menu {
+//     display: none;
+
+//     // Base styles for links
+//     &__link {
+//       text-decoration: none;
+//       font-weight: 600;
+//       letter-spacing: -0.05em;
+//       transition: color 0.3s;
+//       color: $slate600; // Move color up for better readability
+
+//       &:hover {
+//         color: $rose;
+//       }
+//     }
+//   }
+
+//   &__bars {
+//     font-size: $size-2xl;
+//     color: $light;
+//   }
+
+//   &__line {
+//     border: 1px solid $slate600; // Clever way to add a divider line
+//     padding-top: 1.5em;
+//   }
+
+//   &__sun {
+//     color: $slate600;
+//     font-size: $size-sm;
+//   }
+
+//   &__resume {
+//     font-size: $size-xs;
+//   }
+// }
+
+// // Mobile styles
+// @media (min-width: 768px) {
+//   .header {
+//     &__menu {
+//       display: flex;
+//       align-items: center;
+//       list-style: none;
+//       padding: 0;
+//       gap: 2em;
+//     }
+
+//     &__bars {
+//       display: none; // Hide bars in desktop view
+//     }
+//   }
+// }
+
+// // Large screens
+// @media (min-width: 1024px) {
+//   .header {
+//     &__link {
+//       font-size: $size-sm; // Override font-size if needed
+//     }
+
+//     &__sun {
+//       width: $size-xl;
+//       height: $size-xl; // Consider using font-size if it’s an icon
+//     }
+
+//     &__resume {
+//       font-size: $size-sm; // Override font-size if needed
+//     }
+//   }
+// }
+
+// // Additional media queries can be added below as needed
+
+
+
+

@@ -15,17 +15,18 @@
   padding: 0.5em 1em;
   border-radius: 6px;
   font-weight: 600;
+  text-decoration: none;
   letter-spacing: -0.05em;
-  box-shadow: 0px 10px 10px rgba($rose, 0.5),
-              0px 6px 6px rgba($rose, 0.5),
+  box-shadow: 0 10px 10px rgba($rose, 0.5),
+              0 6px 6px rgba($rose, 0.5),
               0 0 100px -10px $rose;
 
   transition: transform 0.3s , box-shadow 0.3s ;
   
   &:hover{
     transform: translateY(-3px);
-    box-shadow: 0px 14px 28px rgba($rose, 0.25),
-                0px 10px 10px rgba($rose, 0.22),
+    box-shadow: 0 14px 28px rgba($rose, 0.25),
+                0 10px 10px rgba($rose, 0.22),
                 0 0 120px -10px $rose;
   }
 }
@@ -36,7 +37,7 @@
   margin-right: auto;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
-  border: 1px solid red;
+  // border: 1px solid red;
 }
 
 .section{

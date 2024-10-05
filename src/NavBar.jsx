@@ -1,18 +1,25 @@
 import "../styles/NavBar.scss";
 
+
+
 export default function NavBar() {
   return (
-    <div className="container">
-      <p>
-        Lorem <a>ipsum, dolor sit amet consectetur</a> adipisicing elit.
-        Reprehenderit, maiores sequi molestiae necessitatibus inventore
-        assumenda debitis iusto, magnam omnis modi{" "}
-        <strong>excepturi error explicabo doloribus quidem</strong> placeat nemo
-        ea recusandae fugit!
-      </p>
-      <button type="button" className="btn">
-        Button
-      </button>
-    </div>
+    <nav className="header container">
+
+      <ul className="header__menu">
+
+        <li><a className="header__link" href="#about">About</a></li>
+        <li><a className="header__link" href="#featured">Work</a></li>
+        <li><a className="header__link" href="#contact">Contact</a></li>
+
+        <li className="header__line" />
+
+        <li><button className="header__sun" type="button"><i className="ri-sun-fill" /></button></li>
+        <li><a className="header__resume btn" href="#Resume">Resume</a></li>
+        
+      </ul>
+      
+      <button className="header__bars" type="button"><i className="ri-menu-line" /></button>
+    </nav>
   );
 }
