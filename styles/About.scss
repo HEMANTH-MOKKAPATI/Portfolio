@@ -1,0 +1,145 @@
+@import "variables";
+
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  &__title {
+    font-size: $size-2xl;
+    color: $light;
+  }
+
+  &__description {
+    font-size: $size-sm;
+    color: $slate600;
+    max-width: 60ch;
+  }
+
+  &__hr {
+    border-color: $slate800;
+  }
+
+  &__subtitle {
+    font-size: $size-sm;
+    color: $slate400;
+  }
+
+  &__ul-container {
+    display: flex;
+  }
+
+  &__ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    list-style: "\1F44D ";
+    flex: 1;
+    padding-left: 1em;
+  }
+
+  &__list {
+    color: $slate600;
+    font-size: $size-sm;
+
+    &::before {
+      content: "";
+      margin-left: 0.5em;
+    }
+  }
+}
+
+@media (min-width: 475px) {
+  .about {
+    gap: 1.5rem;
+
+    &__content {
+      gap: 1.5rem;
+    }
+
+    &__title {
+      font-size: $size-3xl;
+    }
+
+    &__description {
+      font-size: $size-base;
+    }
+
+    &__subtitle {
+      font-size: $size-base;
+    }
+
+    &__list {
+      font-size: $size-base;
+    }
+  }
+}
+
+@media (min-width: 640px) {
+  .about__img-container {
+    margin: 0 auto;
+  }
+  .about__img {
+    width: 28.6875rem;
+  }
+}
+
+// @media (min-width: 768px) {}
+@media (min-width: 1024px) {
+  .about {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    &__title {
+      font-size: $size-4xl;
+    }
+
+    &__description {
+      font-size: $size-lg;
+    }
+
+    &__subtitle {
+      font-size: $size-lg;
+    }
+
+    &__list {
+      font-size: $size-lg;
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  .about {
+    &__content{
+      gap:2rem;
+    }
+
+    &__title {
+      font-size: $size-5xl;
+    }
+
+    &__description {
+      font-size: $size-xl;
+    }
+
+    &__subtitle {
+      font-size: $size-xl;
+    }
+
+    &__list {
+      font-size: $size-xl;
+    }
+
+    &__img {
+      width: 30.75rem;
+    }
+  }
+}
+// @media (min-width: 1536px) {}
