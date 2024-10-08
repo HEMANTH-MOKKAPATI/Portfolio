@@ -1,0 +1,102 @@
+@import "variables";
+
+.featured {
+  &__subtitle {
+    font-size: $size-sm;
+    color: $indigo;
+    text-transform: capitalize;
+    font-weight: 400;
+  }
+
+  &__wrapper {
+    display: flex;
+    gap: 1rem;
+  }
+
+  &__title {
+    font-size: $size-2xl;
+    color: $light;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  &__link {
+    color: $rose;
+    width: $size-2xl;
+    height: $size-2xl;
+  }
+
+  &__description {
+    font-size: $size-sm;
+    color: $slate600;
+    max-width: 60ch;
+    margin: 1rem 0;
+  }
+}
+
+@media (min-width: 475px) {
+  .featured {
+    &__subtitle {
+      font-size: $size-base;
+    }
+
+    &__title {
+      font-size: $size-3xl;
+    }
+    &__link {
+      width: $size-3xl;
+      height: $size-3xl;
+    }
+
+    &__description {
+      font-size: $size-base;
+      margin: 1.5rem 0;
+    }
+  }
+}
+
+// @media (min-width: 640px) {}
+// @media (min-width: 768px) {}
+
+@media (min-width: 1024px) {
+  .featured {
+    &__subtitle {
+      font-size: $size-lg;
+    }
+
+    &__title {
+      font-size: $size-4xl;
+    }
+    &__link {
+      width: $size-4xl;
+      height: $size-4xl;
+    }
+
+    &__description {
+      font-size: $size-lg;
+      margin: 1.5rem 0;
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  .featured {
+    &__subtitle {
+      font-size: $size-xl;
+    }
+
+    &__title {
+      font-size: $size-5xl;
+    }
+    &__link {
+      width: $size-5xl;
+      height: $size-5xl;
+    }
+
+    &__description {
+      font-size: $size-xl;
+      margin: 2rem 0;
+    }
+  }
+}
+
+// @media (min-width: 1536px) {}
