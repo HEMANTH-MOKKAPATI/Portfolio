@@ -17,8 +17,8 @@
     font-size: $size-2xl;
     color: $light;
     text-transform: uppercase;
-    font-weight: 600;
   }
+
   &__link {
     color: $rose;
     width: $size-2xl;
@@ -31,6 +31,63 @@
     max-width: 60ch;
     margin: 1rem 0;
   }
+
+  &__info-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  &__info-container div {
+    flex: 1;
+    min-width: 250px;
+  }
+
+  &__label {
+    font-size: $size-base;
+    text-transform: capitalize;
+    margin-bottom: 0.25em;
+  }
+
+  &__tech-stack {
+    padding: 0;
+    list-style: none;
+  }
+
+  &__info {
+    color: $slate600;
+    font-size: $size-sm;
+    text-transform: capitalize;
+  }
+
+  &__img-container {
+    margin-top: 1rem;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  &__img-wrapper {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-color: rgba($indigo, 0.4);
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      transition: background-color 0.3s;
+    }
+
+    &:hover::after {
+      background-color: rgba($indigo, 0.1);
+    }
+
+
+  }
 }
 
 @media (min-width: 475px) {
@@ -42,6 +99,7 @@
     &__title {
       font-size: $size-3xl;
     }
+
     &__link {
       width: $size-3xl;
       height: $size-3xl;
@@ -51,10 +109,27 @@
       font-size: $size-base;
       margin: 1.5rem 0;
     }
+
+    &__label {
+      font-size: $size-lg;
+    }
+
+    &__info {
+      font-size: $size-base;
+    }
+
+    &__img-container {
+      margin-top: 1.5rem;
+      grid-gap: 1.5rem;
+    }
   }
 }
 
-// @media (min-width: 640px) {}
+@media (min-width: 640px) {
+  .featured__img-container {
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  }
+}
 // @media (min-width: 768px) {}
 
 @media (min-width: 1024px) {
@@ -66,6 +141,7 @@
     &__title {
       font-size: $size-4xl;
     }
+    
     &__link {
       width: $size-4xl;
       height: $size-4xl;
@@ -74,6 +150,14 @@
     &__description {
       font-size: $size-lg;
       margin: 1.5rem 0;
+    }
+
+    &__label {
+      font-size: $size-xl;
+    }
+
+    &__info {
+      font-size: $size-lg;
     }
   }
 }
@@ -95,6 +179,18 @@
     &__description {
       font-size: $size-xl;
       margin: 2rem 0;
+    }
+    &__label {
+      font-size: $size-2xl;
+    }
+
+    &__info {
+      font-size: $size-xl;
+    }
+
+    &__img-container {
+      margin-top: 2rem;
+      grid-gap: 2rem;
     }
   }
 }
