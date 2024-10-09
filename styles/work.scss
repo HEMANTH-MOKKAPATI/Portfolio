@@ -1,0 +1,280 @@
+@import "variables";
+
+.work {
+  &__title {
+    font-size: $size-2xl;
+    text-align: center;
+  }
+
+  &__description {
+    color: $slate600;
+    font-size: $size-sm;
+    max-width: 60ch;
+    margin: 1rem auto;
+    text-align: center;
+  }
+
+  &__container {
+    text-align: center;
+  }
+
+  &__project-title {
+    font-size: $size-base;
+    margin-bottom: 1rem;
+  }
+
+  &__img-wrapper {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-color: rgba($indigo, 0.4);
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      transition: background-color 0.3s;
+    }
+
+    &:hover::after {
+      background-color: rgba($indigo, 0.3);
+    }
+  }
+
+  &__project:not(:last-child) {
+    margin-bottom: 5rem;
+  }
+
+  &__project-desc1 {
+    font-size: $size-sm;
+    color: $slate600;
+    margin: 1rem 0;
+  }
+
+  &__project-desc2 {
+    font-size: $size-sm;
+    color: $slate400;
+    margin-bottom: 1rem;
+  }
+
+  &__project-btn {
+    font-size: $size-sm;
+  }
+}
+
+@media (min-width: 475px) {
+  .work {
+    &__title {
+      font-size: $size-3xl;
+    }
+
+    &__description {
+      font-size: $size-base;
+      margin: 1.5rem auto;
+    }
+
+    &__project-title {
+      font-size: $size-lg;
+      margin-bottom: 1.5rem;
+    }
+    &__project-desc1 {
+      font-size: $size-base;
+      margin: 1.5rem 0;
+    }
+
+    &__project-desc2 {
+      font-size: $size-base;
+      margin-bottom: 1.5rem;
+    }
+
+    &__project-btn {
+      font-size: $size-base;
+    }
+  }
+}
+
+@media (min-width: 640px) {
+  .work {
+    &__container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas:
+        "image1 content1"
+        "content2 image2"
+        "image3 content3"
+        "content4 image4"
+        "image5 content5"
+        "content6 image6";
+      place-items: center;
+    }
+
+    &__image1 {
+      grid-area: image1;
+    }
+
+    &__image2 {
+      grid-area: image2;
+    }
+
+    &__image3 {
+      grid-area: image3;
+    }
+
+    &__image4 {
+      grid-area: image4;
+    }
+
+    &__image5 {
+      grid-area: image5;
+    }
+
+    &__image6 {
+      grid-area: image6;
+    }
+
+    &__content1 {
+      grid-area: content1;
+    }
+
+    &__content2 {
+      grid-area: content2;
+    }
+
+    &__content3 {
+      grid-area: content3;
+    }
+
+    &__content4 {
+      grid-area: content4;
+    }
+
+    &__content5 {
+      grid-area: content5;
+    }
+
+    &__content6 {
+      grid-area: content6;
+    }
+
+    &__project {
+      padding: 0 1rem;
+    }
+
+    &__project-title {
+      display: none;
+    }
+
+    &__project-subtitle {
+      display: block;
+      font-size: $size-base;
+    }
+
+    &__project-desc1 {
+      font-size: $size-xs;
+      margin: 1em 0;
+    }
+
+    &__project-desc2 {
+      font-size: $size-xs;
+      margin-bottom: 1em;
+    }
+
+    &__project-btn {
+      font-size: $size-xs;
+    }
+
+    &__project:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .work {
+    &__project-subtitle {
+      font-size: $size-lg;
+    }
+
+    &__project-desc1 {
+      font-size: $size-sm;
+    }
+
+    &__project-desc2 {
+      font-size: $size-sm;
+    }
+
+    &__project-btn {
+      font-size: $size-sm;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .work {
+    &__title {
+      font-size: $size-4xl;
+    }
+
+    &__description {
+      font-size: $size-lg;
+    }
+
+    &__project-subtitle {
+      font-size: $size-xl;
+    }
+
+    &__project-desc1 {
+      font-size: $size-base;
+    }
+
+    &__project-desc2 {
+      font-size: $size-base;
+    }
+
+    &__project-btn {
+      font-size: $size-base;
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  .work {
+    &__title {
+      font-size: $size-5xl;
+    }
+
+    &__description {
+      font-size: $size-xl;
+      margin: 2rem auto;
+    }
+
+    &__container {
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    &__project-subtitle {
+      font-size: $size-2xl;
+    }
+
+    &__project-desc1 {
+      font-size: $size-lg;
+    }
+
+    &__project-desc2 {
+      font-size: $size-lg;
+    }
+
+    &__project-btn {
+      font-size: $size-lg;
+    }
+  }
+}
+
+@media (min-width: 1536px) {
+  .work__container {
+    width: 70%;
+  }
+}
