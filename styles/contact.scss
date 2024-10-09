@@ -1,0 +1,87 @@
+@import "variables";
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1rem;
+
+  &__title {
+    font-size: $size-2xl;
+    color: $light;
+    text-transform: capitalize;
+  }
+
+  &__description {
+    font-size: $size-sm;
+    color: $slate600;
+    max-width: 60ch;
+  }
+
+  &__btn {
+    font-size: $size-sm;
+  }
+}
+
+@media (min-width: 475px) {
+  .contact {
+    gap: 1.5rem;
+
+    &__title {
+      font-size: $size-3xl;
+    }
+
+    &__description {
+      font-size: $size-base;
+    }
+
+    &__btn {
+      font-size: $size-base;
+    }
+  }
+}
+
+
+// @media (min-width: 640px) {}
+// @media (min-width: 768px) {}
+
+
+@media (min-width: 1024px) {
+  .contact {
+    gap: 1.5rem;
+
+    &__title {
+      font-size: $size-4xl;
+    }
+
+    &__description {
+      font-size: $size-lg;
+    }
+
+    &__btn {
+      font-size: $size-lg;
+    }
+  }
+}
+
+
+@media (min-width: 1280px) {
+  .contact {
+    gap: 1.5rem;
+
+    &__title {
+      font-size: $size-5xl;
+    }
+
+    &__description {
+      font-size: $size-xl;
+    }
+
+    &__btn {
+      font-size: $size-xl;
+    }
+  }
+}
+// @media (min-width: 1536px) {}
