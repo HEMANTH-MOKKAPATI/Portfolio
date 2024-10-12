@@ -2,7 +2,7 @@ import "../styles/featured.scss";
 
 export default function Featured() {
   return (
-    <section className="featured container section">
+    <section id="featured" className="featured container section">
       <h3 className="featured__subtitle">Featured Project</h3>
       <div className="featured__wrapper">
         <h2 className="featured__title">Slaying The Dragon</h2>
@@ -50,7 +50,7 @@ export default function Featured() {
           <p className="featured__info">December 2022 - present</p>
         </div>
       </div>
-      
+
       <div className="featured__img-container">
         <div className="featured__img-wrapper">
           <img src="/slayingthedragon.png" alt=" slayingthedragon" />

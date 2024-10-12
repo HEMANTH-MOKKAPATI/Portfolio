@@ -6,22 +6,18 @@ import NavBar from "./NavBar";
 import Work from "./Work";
 import Hero from "./hero";
 
-
-export default function App () {
+export default function App() {
   return (
     <>
-      <NavBar/>
+      <NavBar />
 
-      <main>
-        <Hero />
-        <About />
-        <Featured />
-        <Work />
-        <Contact />
-      </main>
-    
+      <Hero />
+      <About />
+      <Featured />
+      <Work />
+      <Contact />
+
       <Footer />
-
     </>
   );
-}
+} 

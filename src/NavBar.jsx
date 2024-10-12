@@ -1,7 +1,6 @@
 import "../styles/NavBar.scss";
 
-
-
+//prettier-ignore
 export default function NavBar() {
   return (
     <nav className="header container">

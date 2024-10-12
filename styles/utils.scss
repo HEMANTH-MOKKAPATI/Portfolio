@@ -7,7 +7,6 @@
 // @media (min-width: 1280px) {}
 // @media (min-width: 1536px) {}
 
-
 //prettier-ignore
 .btn{
   display: inline-block;
@@ -41,10 +40,9 @@
   // border: 1px solid red;
 }
 
-.section{
+.section {
   margin-top: 5rem;
 }
-
 
 // xs
 @media (min-width: 475px) {
@@ -72,7 +70,7 @@
   .container {
     max-width: 1024px;
   }
-  .section{
+  .section {
     margin-top: 10rem;
   }
 }
@@ -83,7 +81,6 @@
     max-width: 1280px;
   }
 }
-
 
 //2xl
 @media (min-width: 1536px) {
