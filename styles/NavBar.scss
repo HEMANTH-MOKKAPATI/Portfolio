@@ -7,10 +7,14 @@
   padding-top: 2rem;
   padding-bottom: 2rem;
 
+  //for the visibility of bars in the mobile menu ( can be added in the __bars section also)
+  position: relative;
+  z-index: 999;
+  
   &__menu {
     display: none;
   }
-
+  
   &__bars {
     color: $light;
     font-size: $size-2xl;

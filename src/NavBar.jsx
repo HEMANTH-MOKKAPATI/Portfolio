@@ -1,7 +1,8 @@
 import "../styles/NavBar.scss";
 
 //prettier-ignore
-export default function NavBar() {
+// eslint-disable-next-line react/prop-types
+export default function NavBar({toggleMobileNav, toggleTheme}) {
   return (
     <nav className="header container">
 
@@ -13,12 +14,12 @@ export default function NavBar() {
 
         <li className="header__line" />
 
-        <li><button className="header__sun" type="button"><i className="ri-sun-fill" /></button></li>
+        <li><button  onClick={toggleTheme} className="header__sun" type="button"><i className="ri-sun-fill" /></button></li>
         <li><a className="header__resume btn" href="#Resume">Resume</a></li>
         
       </ul>
       
-      <button className="header__bars" type="button"><i className="ri-menu-line" /></button>
+      <button onClick={toggleMobileNav} className="header__bars" type="button"><i className="ri-menu-line" /></button>
     </nav>
   );
 }
