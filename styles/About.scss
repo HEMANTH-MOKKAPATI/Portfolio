@@ -13,22 +13,22 @@
 
   &__title {
     font-size: $size-2xl;
-    color: $light;
+    color: var(--light);
   }
 
   &__description {
     font-size: $size-sm;
-    color: $slate600;
+    color: var(--slate600);
     max-width: 60ch;
   }
 
   &__hr {
-    border-color: $slate800;
+    border-color: var(--slate800);
   }
 
   &__subtitle {
     font-size: $size-sm;
-    color: $slate400;
+    color: var(--slate400);
   }
 
   &__ul-container {
@@ -45,7 +45,7 @@
   }
 
   &__list {
-    color: $slate600;
+    color: var(--slate600);
     font-size: $size-sm;
 
     &::before {
@@ -85,6 +85,7 @@
   .about__img-container {
     margin: 0 auto;
   }
+
   .about__img {
     width: 28.6875rem;
   }
@@ -117,8 +118,8 @@
 
 @media (min-width: 1280px) {
   .about {
-    &__content{
-      gap:2rem;
+    &__content {
+      gap: 2rem;
     }
 
     &__title {
@@ -142,4 +143,5 @@
     }
   }
 }
+
 // @media (min-width: 1536px) {}

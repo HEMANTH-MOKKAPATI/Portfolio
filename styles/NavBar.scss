@@ -10,13 +10,13 @@
   //for the visibility of bars in the mobile menu ( can be added in the __bars section also)
   position: relative;
   z-index: 999;
-  
+
   &__menu {
     display: none;
   }
-  
+
   &__bars {
-    color: $light;
+    color: var(--light);
     font-size: $size-2xl;
   }
 }
@@ -37,23 +37,23 @@
     &__link {
       text-decoration: none;
       font-size: $size-xs;
-      color: $slate600;
+      color: var(--slate600);
       letter-spacing: -0.05em;
       font-weight: 600;
       transition: color 0.3s;
 
       &:hover {
-        color: $rose;
+        color: var(--rose);
       }
     }
 
     &__line {
-      border: 1px solid $slate600; //clever way to add a divider line
+      border: 1px solid var(--slate600); //clever way to add a divider line
       padding-top: 1.5em;
     }
 
     &__sun {
-      color: $slate600;
+      color: var(--slate600);
       font-size: $size-sm;
     }
 
@@ -76,7 +76,7 @@
 
     &__sun {
       // font-size: $size-xl;
-      color: $slate600;
+      color: var(--slate600);
       width: $size-xl;
       height: $size-xl; // use width and height instead of font-size
     }
@@ -109,26 +109,26 @@
 //       font-weight: 600;
 //       letter-spacing: -0.05em;
 //       transition: color 0.3s;
-//       color: $slate600; // Move color up for better readability
+//       color: var(--slate600); // Move color up for better readability
 
 //       &:hover {
-//         color: $rose;
+//         color: var(--rose);
 //       }
 //     }
 //   }
 
 //   &__bars {
 //     font-size: $size-2xl;
-//     color: $light;
+//     color: var(--light);
 //   }
 
 //   &__line {
-//     border: 1px solid $slate600; // Clever way to add a divider line
+//     border: 1px solid var(--slate600); // Clever way to add a divider line
 //     padding-top: 1.5em;
 //   }
 
 //   &__sun {
-//     color: $slate600;
+//     color: var(--slate600);
 //     font-size: $size-sm;
 //   }
 
@@ -173,7 +173,3 @@
 // }
 
 // // Additional media queries can be added below as needed
-
-
-
-

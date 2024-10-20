@@ -3,7 +3,7 @@
 .featured {
   &__subtitle {
     font-size: $size-sm;
-    color: $indigo;
+    color: var(--indigo);
     text-transform: capitalize;
     font-weight: 400;
   }
@@ -15,19 +15,19 @@
 
   &__title {
     font-size: $size-2xl;
-    color: $light;
+    color: var(--light);
     text-transform: uppercase;
   }
 
   &__link {
-    color: $rose;
+    color: var(--rose);
     width: $size-2xl;
     height: $size-2xl;
   }
 
   &__description {
     font-size: $size-sm;
-    color: $slate600;
+    color: var(--slate600);
     max-width: 60ch;
     margin: 1rem 0;
   }
@@ -55,7 +55,7 @@
   }
 
   &__info {
-    color: $slate600;
+    color: var(--slate600);
     font-size: $size-sm;
     text-transform: capitalize;
   }
@@ -73,7 +73,7 @@
     &::after {
       content: "";
       position: absolute;
-      background-color: rgba($indigo, 0.4);
+      background-color: rgba(var(--indigo), 0.4);
       width: 100%;
       height: 100%;
       top: 0;
@@ -83,7 +83,7 @@
     }
 
     &:hover::after {
-      background-color: rgba($indigo, 0.1);
+      background-color: rgba(var(--indigo), 0.1);
     }
 
 
@@ -130,6 +130,7 @@
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   }
 }
+
 // @media (min-width: 768px) {}
 
 @media (min-width: 1024px) {
@@ -141,7 +142,7 @@
     &__title {
       font-size: $size-4xl;
     }
-    
+
     &__link {
       width: $size-4xl;
       height: $size-4xl;
@@ -171,6 +172,7 @@
     &__title {
       font-size: $size-5xl;
     }
+
     &__link {
       width: $size-5xl;
       height: $size-5xl;
@@ -180,6 +182,7 @@
       font-size: $size-xl;
       margin: 2rem 0;
     }
+
     &__label {
       font-size: $size-2xl;
     }

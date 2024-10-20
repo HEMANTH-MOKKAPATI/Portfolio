@@ -10,24 +10,24 @@
 //prettier-ignore
 .btn {
   display: inline-block;
-  background-color: $rose;
-  color: $light;
+  background-color: var(--rose);
+  color:#f1f5f9;
   padding: 0.5em 1em;
   border-radius: 6px;
   font-weight: 600;
   text-decoration: none;
   letter-spacing: -0.05em;
-  box-shadow: 0 10px 10px rgba($rose, 0.5),
-    0 6px 6px rgba($rose, 0.5),
-    0 0 100px -10px $rose;
+  box-shadow: 0 10px 10px rgba(var(--rose), 0.5),
+    0 6px 6px rgba(var(--rose), 0.5),
+    0 0 100px -10px var(--rose);
 
   transition: transform 0.3s, box-shadow 0.3s;
 
   &:hover {
     transform: translateY(-3px);
-    box-shadow: 0 14px 28px rgba($rose, 0.25),
-      0 10px 10px rgba($rose, 0.22),
-      0 0 120px -10px $rose;
+    box-shadow: 0 14px 28px rgba(var(--rose), 0.25),
+      0 10px 10px rgba(var(--rose), 0.22),
+      0 0 120px -10px var(--rose);
   }
 }
 
@@ -56,7 +56,6 @@
   .container {
     max-width: 640px;
   }
-
 }
 
 // medium

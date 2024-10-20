@@ -16,22 +16,24 @@
   }
 
   &__subtitle {
-    color: $slate800;
+    color: var(--slate800);
     font-size: $size-base;
   }
 
   &__title {
-    color: $slate400;
+    color: var(--slate400);
     font-size: $size-4xl;
     text-transform: uppercase;
     letter-spacing: -0.05em;
     line-height: 0.9;
   }
+
   &__description {
     max-width: 60ch;
     font-size: $size-sm;
-    color: $slate600;
+    color: var(--slate600);
   }
+
   &__btn {
     font-size: $size-sm;
     text-transform: capitalize;
@@ -55,9 +57,11 @@
     &__title {
       font-size: $size-5xl;
     }
+
     &__description {
       font-size: $size-base;
     }
+
     &__btn {
       font-size: $size-base;
     }
@@ -80,9 +84,11 @@
     &__title {
       font-size: $size-7xl;
     }
+
     &__description {
       font-size: $size-lg;
     }
+
     &__btn {
       font-size: $size-lg;
     }
@@ -106,13 +112,16 @@
     &__title {
       font-size: $size-9xl;
     }
+
     &__description {
       font-size: $size-xl;
     }
+
     &__btn {
       font-size: $size-xl;
       text-transform: capitalize;
     }
   }
 }
+
 // @media (min-width: 1536px) {}

@@ -7,7 +7,7 @@
   z-index: 99;
   height: 100%;
   width: 100%;
-  background-color: $dark;
+  background-color: var(--dark);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -25,31 +25,30 @@
 
   &__link {
     text-decoration: none;
-    color: $light;
+    color: var(--light);
     font-size: $size-sm;
     font-weight: 600;
     letter-spacing: -0.05em;
     transition: color 0.3s;
 
     &:hover {
-      color: $rose;
+      color: var(--rose);
     }
   }
 
   &__link-line {
-    border: 1px solid $slate600;
+    border: 1px solid var(--slate600);
     padding-right: 1.5em;
   }
 
-  &__sun{
+  &__sun {
     display: block;
-    color: $slate600;
+    color: var(--slate600);
     height: $size-xl;
     width: $size-xl;
   }
 
-  &__btn{
+  &__btn {
     font-size: $size-sm;
   }
 }
-

@@ -10,13 +10,13 @@
 
   &__title {
     font-size: $size-2xl;
-    color: $light;
+    color: var(--light);
     text-transform: capitalize;
   }
 
   &__description {
     font-size: $size-sm;
-    color: $slate600;
+    color: var(--slate600);
     max-width: 60ch;
   }
 
@@ -84,4 +84,5 @@
     }
   }
 }
+
 // @media (min-width: 1536px) {}

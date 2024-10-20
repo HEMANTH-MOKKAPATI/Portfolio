@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import About from "./About";
 import Contact from "./Contact";
 import Featured from "./Featured";
@@ -10,6 +10,13 @@ import Hero from "./hero";
 
 export default function App() {
   const [isMobileNavVisible, setIsMobileNavVisible] = useState(false);
+  const [isLightMode, setIsLightMode] = useState(false);
+
+  useEffect(() => {
+    const theme = localStorage.getItem("theme");
+    theme && document.body.classList.add(theme);
+    setIsLightMode(theme === "lightmode");
+  }, []);
 
   function toggleMobileNav() {
     // -----------------------------------------
@@ -39,12 +46,22 @@ export default function App() {
   }
 
   function toggleTheme() {
-    document.body.classList.toggle("lightmode");
+    const isLightModeActive = document.body.classList.toggle("lightmode");
+
+    if (isLightModeActive) {
+      localStorage.setItem("theme", "lightmode");
+    } else {
+      localStorage.removeItem("theme");
+      document.body.removeAttribute("class");
+    }
+
+    setIsLightMode(isLightModeActive);
   }
 
   return (
-    <>
+    <div>
       <NavBar toggleMobileNav={toggleMobileNav} toggleTheme={toggleTheme} />
+
       {isMobileNavVisible && (
         <MobileNav linksHandler={linksHandler} toggleTheme={toggleTheme} />
       )}
@@ -56,6 +73,13 @@ export default function App() {
       <Contact />
 
       <Footer />
-    </>
+    </div>
   );
+}
+
+function toggleMobileNav() {
+  const prev = isMobileNavVisible;
+
+  document.body.style.overflowY = !prev ? "hidden" : "auto";
+  setIsMobileNavVisible(!prev);
 }
